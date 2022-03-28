@@ -1,0 +1,502 @@
+/* ********** Body ********** */
+body{
+    margin: 0;
+    font-family: monospace;
+    color: white;
+    background-color: blueviolet;
+}
+/* ********** End of Body ********** */
+
+
+/* ********** Alarm Stop Button ********** */
+#alarm-stop-button{
+    text-align: center;
+    margin-top: 25px;
+    position: relative;
+    top: 100%;
+    padding: 0 !important;
+}
+
+#stop-alarm{
+    border: none;
+    margin: 0;
+    border-radius: 0.5rem;
+    padding: 10px 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(216, 47, 47);
+    color: white;
+}
+
+#stop-alarm:hover{
+    color: black;
+    z-index: -1;
+}
+
+#stop-alarm:active{
+    transform: translateY(500px) translateZ(50px);
+}
+
+#stop-alarm:active{
+    transform: translateY(1px);
+}
+
+/* ********** End of Alarm Stop Button ********** */
+
+
+/* ********** Clock Timer Body ********** */
+#clock-body{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.clock-body{
+    width: 35%;
+    margin: auto;
+    padding: 25px;
+}
+
+.digit-display{
+    width: 150px;
+    height: 80px;
+    display: flex;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    position: relative;
+}
+
+#display-details{
+    display: flex;
+    padding: 0 !important;
+    justify-content: flex-start;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#display-details p{
+    width: 15%;
+    margin-left: 52px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* .clock-timer{
+    background-color: rgb(175, 111, 175);
+} */
+
+/* .amPM{
+    background-color: rgb(56, 23, 56);
+} */
+
+.margin-none{
+    margin: 0;
+}
+
+.timer-color{
+    background-color: rgb(201, 164, 201);
+}
+
+.digit-left{
+    width: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.5);
+    font-size: 3.8rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    border-radius: 1rem;
+    background-color: rgb(201, 164, 201);
+    color: rgb(73, 10, 73);
+}
+
+.digit-right{
+    width: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 0.5px solid rgba(255, 255, 255, 0.5);
+    font-size: 3.8rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    border-radius: 1rem;
+    background-color: rgb(201, 164, 201);
+    color: rgb(73, 10, 73);
+}
+
+/* Hours Left Dailer */
+.hrs-left-dialer-next{
+    position: absolute;
+    left: 10px;
+    top: 75px;
+}
+
+.hrs-left-dialer-next-animate{
+    transition: all 0.5s;
+    left: 11.5px;
+    top: 0px;
+}
+/* End of Hours Left Dialer */
+
+
+/* Hours Right Dailer */
+.hrs-right-dialer-next{
+    position: absolute;
+    left: 10px;
+    top: 75px;
+}
+
+.hrs-right-dialer-next-animate{
+    transition: all 0.5s;
+    left: 11.5px;
+    top: 0px;
+}
+/* End of Hours Right Dialer */
+
+
+/* Minutes Left Dailer */
+.min-left-dialer-next{
+    position: absolute;
+    left: 10px;
+    top: 75px;
+}
+
+.min-left-dialer-next-animate{
+    transition: all 0.5s;
+    left: 11.5px;
+    top: 0px;
+}
+/* End of Minutes Left Dialer */
+
+
+/* Minutes Right Dailer */
+.min-right-dialer-next{
+    position: absolute;
+    left: 10px;
+    top: 75px;
+}
+
+.min-right-dialer-next-animate{
+    transition: all 0.5s;
+    left: 11.5px;
+    top: 0px;
+}
+/* End of Minutes Right Dialer */
+
+
+/* Seconds Left Dailer */
+.sec-left-dialer-next{
+    position: absolute;
+    left: 10px;
+    top: 75px;
+}
+
+.sec-left-dialer-next-animate{
+    transition: all 0.5s;
+    left: 11.5px;
+    top: 0px;
+}
+/* End of Seconds Left Dialer */
+
+
+/* Seconds Right Dialer */
+.sec-right-dialer-next{
+    position: absolute;
+    left: 10px;
+    top: 75px;
+}
+
+.sec-right-dialer-next-animate{
+    transition: all 0.5s;
+    left: 11.5px;
+    top: 0px;
+}
+/* End of Seconds Right Dailer */
+
+
+/* AM or PM (left)  */
+.amPM-left-dialer-next{
+    position: absolute;
+    left: 10px;
+    top: 75px;
+    background-color: rgb(201, 164, 201);
+}
+
+.amPM-left-dialer-next-animate{
+    transition: all 0.5s;
+    left: 8.5px;
+    top: 0px;
+}
+
+
+/* AM or PM (right) */
+.amPM-right-dialer-next{
+    position: absolute;
+    left: 10px;
+    top: 75px;
+}
+
+.amPM-right-dialer-next-animate{
+    transition: all 0.5s;
+    left: 8.5px;
+    top: 0px;
+}
+
+
+/* Seperator between (hrs : mins: secs) */
+.separator-colon{
+    color: white;
+    font-size: 2rem;
+    margin-top: 15px;
+    animation: fadeInOut 1s ease-in-out infinite alternate;
+}
+
+@keyframes fadeInOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/* ************ End of Clock Timer Body ********** */
+
+
+/* ********** Date Container (Dsiplay Panel) ********** */
+#date-container{
+    background-color: transparent;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: lightgrey;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.date-container-animate{
+    animation: backgroundFadeInOut 1s ease-in-out infinite alternate;
+}
+
+.date-container-animate2{
+    animation: backgroundFadeInOut2 1s ease-in-out infinite alternate;
+}
+
+.date-container-animate3{
+    animation: backgroundFadeInOut3 1s ease-in-out infinite alternate;
+}
+
+.date-container-animate-alarm{
+    animation: backgroundFadeInOutAlarm 1s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundFadeInOut{
+    0%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: rgb(199, 60, 60);
+        color: white;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+
+@keyframes backgroundFadeInOut2{
+    0%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: rgb(128, 214, 102);
+        color: white;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+
+@keyframes backgroundFadeInOut3{
+    0%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: rgb(233, 207, 90);
+        color: white;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+
+@keyframes backgroundFadeInOutAlarm{
+    0%{
+        background-color: transparent;
+    }
+    25%{
+        background-color: rgb(233, 207, 90);
+        color: white;
+    }
+    50%{
+        background-color: transparent;
+    }
+    75%{
+        background-color: rgb(221, 94, 56);
+        color: white;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+
+#date-container > p{
+    margin: 0;
+}
+/* ********** End of Date Container (Dsiplay Panel) ********** */
+
+
+/* ********** Set alarms on clock ********** */
+#add-alarm{
+    display: flex;
+    justify-content: space-between;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgb(104, 27, 177);
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+#add-alarm > input{
+    width: 10%;
+    padding: 10px;
+    outline: none;
+    background-color: transparent;
+    border-radius: 15%;
+    color: white;
+}
+
+#add-alarm button:hover{
+    color: black;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#drop-down {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+::placeholder{
+    color: whitesmoke;
+    opacity: 0.5;
+}
+
+#drop-down option{
+    background-color: rgb(104, 27, 177);
+}
+
+.border{
+    border: 1px solid white;
+}
+
+#add-alarm button{
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    color: white;
+    background-color: dodgerblue;
+}
+
+#add-alarm button:active{
+    transform: translateY(1px);
+}
+
+/* ********** End of Set alarms on clock ********** */
+
+
+/* ********** Alarm List ********** */
+#alarm-list{
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+}
+
+#alarm-list p{
+    text-align: center;
+    margin: 0;
+    font-size: 1.1rem;
+
+}
+
+#list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+li img{
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#alarm-list-left{
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+}
+
+#alarm-list-right button{
+    margin-right: 15px;
+    padding: 4px 8px;
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+#alarm-list-right button:hover{
+    color: red;
+}
+
+#alarm-list-right button:active{
+    transform: translateY(1px);
+}
+
+/* ********** End of Alarm List ********** */
